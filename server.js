@@ -8,7 +8,7 @@ const nodemailer = require("nodemailer");
 // server used to send send emails
 const app = express();
 app.use(cors({
-  origin: 'https://vercel.com/vikash-kumar-patels-projects/my-portfolio-frontend',
+  origin: 'https://my-portfolio-frontend-nh2h.vercel.app',
   credentials: true
 }));
 
