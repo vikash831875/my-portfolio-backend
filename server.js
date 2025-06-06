@@ -7,7 +7,11 @@ const nodemailer = require("nodemailer");
 
 // server used to send send emails
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://vercel.com/vikash-kumar-patels-projects/my-portfolio-frontend',
+  credentials: true
+}));
+
 app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
